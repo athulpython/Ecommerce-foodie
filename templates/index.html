@@ -1,0 +1,367 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+    #headiing {
+      font-family: 'Kalam', cursive;
+      font-size:5em;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      border: 1px solid cyan;
+      border-width: 50%;
+
+    }
+
+    .dropbtn {
+      background-color: teal;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid rgb(0, 248, 132);
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      padding-left: 10px;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: wavy;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    .abcd {
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .account-img {
+      height: 125px;
+      width: 125px;
+      margin-right: 20px;
+      margin-bottom: 16px;
+    }
+
+    .account-heading {
+      font-size: 2.5rem;
+    }
+
+  </style>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+
+    <!-- Categories Section Begin -->
+
+    <section class="categories">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 p-50">
+                    <div class="categories__item categories__large__item set-bg"
+                    data-setbg="{% static 'image/sm.jpg' %}">
+                    <div class="categories__text">
+                        <h1  style="color:black">We Serve More Happiness</h1><br><br>
+                        <h5 style="color:brown"><b>"Feel Freshness..."</b></h5><br>
+                        <a href="#">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-truck"></i>
+                    <h6>Free Home Delivery</h6>
+                    <p>For all oder over RS 99</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-smile-o"></i>
+                    <h6>Fresh&Hygenie</h6>
+                    <p>freshy Helthy packing </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-institution"></i>
+                    <h6>Payment Secure</h6>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-bell"></i>
+                    <h6>App&web</h6>
+                    <p>order now foodie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Section End -->
+
+
+
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <div class="section-title">
+                    <h4>Our food items</h4>
+                </div>
+            </div>
+
+
+                  <div class="dropdown">
+                      <button class="dropbtn">Filter</button>
+                      <div class="dropdown-content">
+                          <a href="/">All </a>
+                          {% for i in ct %}
+                          <a href={{i.get_url}} >{{i.name}}</a></li>
+                          {% endfor %}
+                      </div>
+                  </div><br>
+
+        </div><br>
+<center>
+        <div class="row property__gallery">
+            {% for i in pg.object_list %}
+            <div class="col-lg-3 col-md-2 col-sm-7 mix women">
+                <div class="product__item">
+
+                    <div><a class="product__item__pic set-bg" href="{{i.get_url}}"><img src="{{i.img.url}}" alt="" style="height:300 ; width:280;"></a>
+
+                    </div>
+                    <div class="product__item__text">
+                        <ul class="product__hover">
+
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <li><a href="{% url 'cartDetails' %}"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                        <div class="categories__text">
+                              <h6><b><a href="{{i.get_url}}">{{i.name}}</a></b></h6>
+                        </div><br>
+                        <p>{{i.desc|truncatewords:5}}</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">Price: {{i.price}}</div>
+                    </div>
+                </div>
+            </div>
+             {% endfor %}
+
+        </div>
+    </center>
+    </div>
+</section>
+    <center>
+        {% for p in pg.paginator.page_range %}
+
+          <a href="?page={{p}}" class="btn btn-light btn-sm {% if pg.number == p %} active {% endif %}">{{p}}</a>
+
+
+          {% endfor %}
+         </center><br>
+
+
+<!-- Banner Section Begin -->
+<section class="banner set-bg" data-setbg="{% static 'image/sa.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-8 m-auto">
+                <div class="banner__slider owl-carousel">
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span style="color:white">The Food Collection</span>
+                            <h1  style="color:white">Feel the taste</h1>
+
+                            <a href="#">Order now</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span style="color:white">The Food Collection</span>
+                            <h1  style="color:white">keep smile</h1>
+                            <a href="#">Order now</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span style="color:white">The Food Collection</span>
+                            <h1  style="color:white">enjoy vibe</h1>
+                            <a href="#">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner Section End -->
+
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                        <div class="categories__text"><a href="/"><h3>Foodie</h3></a>
+            </div>
+                    <p>Eat more no colories</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="{% static 'img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="{% static 'img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="{% static 'img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="{% static 'img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="{% static 'img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>NEWSLETTER</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer__copyright__text">
+                    <p><script></script> We serve more happiness <i class="fa fa-heart" aria-hidden="true"></i> by <a href="/" target="_blank">Foodie</a></p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+
+
+<!-- Js Plugins -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'js/mixitup.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock %}

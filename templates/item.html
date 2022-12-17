@@ -1,0 +1,158 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>item/foodie</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'bbcss/bootstrap.min.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/font-awesome.min.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/elegant-icons.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/jquery-ui.min.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/magnific-popup.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/owl.carousel.min.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/slicknav.min.css" type="text/css' %}">
+    <link rel="stylesheet" href="{% static 'bbcss/style.css" type="text/css' %}">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="/"><i class="fa fa-home "></i> Home </a>
+
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product__details__pic">
+                        <div class="product__details__slider__content">
+                           <div><a class="product__item__pic set-bg" href="{{pr.get_url}}"><img src="{{pr.img.url}}" alt="" style="height:310 ; width:310;"></a>
+
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product__details__text">
+                        <h3>{{pr.name}}</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>( 138 reviews )</span>
+                        </div>
+                        <div class="product__details__price">Price :{{pr.price}}<span></span></div>
+                        <h5>Stock : {{pr.stock}}</h5><br>
+                        <p>{{pr.desc}}</p>
+                        <div class="product__details__button">
+                            <div class="quantity">
+
+                            {% if pr.stock <= 0 %}
+                                 <h6 style="color:red">Sorry. No stock avilable</h6><br>
+                            {% else %}
+                            <a href="{% url 'addcart' pr.id %}" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                            {% endif %}
+
+                        </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Product Details Section End -->
+
+    <!-- Instagram Begin -->
+
+    <!-- Instagram End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="footer__copyright__text">
+                        <p><script></script>Serve happiness <i class="fa fa-heart" aria-hidden="true"></i> by <a href="/" target="_blank">Foodie</a></p>
+                    </div>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'bbjs/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'bbjs/bootstrap.min.js' %}"></script>
+    <script src="{% static 'bbjs/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'bbjs/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'bbjs/mixitup.min.js' %}"></script>
+    <script src="{% static 'bbjs/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'bbjs/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'bbjs/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'bbjs/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'bbjs/main.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}
