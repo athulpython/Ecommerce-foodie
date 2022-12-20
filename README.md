@@ -1,4 +1,4 @@
-foodie
+## Foodie
 
 ![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/top.png?raw=true)
 
