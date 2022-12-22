@@ -33,6 +33,7 @@
 
 html,
 body {
+	background-color: #000;
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -115,7 +116,7 @@ ol {
 }
 
 .section-title h4 {
-	color: #111111;
+	color: #f1eeee;
 	font-weight: 600;
 	text-transform: uppercase;
 	position: relative;
@@ -133,6 +134,7 @@ ol {
 }
 
 .set-bg {
+	background-color:white;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;

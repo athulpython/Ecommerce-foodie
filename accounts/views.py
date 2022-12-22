@@ -8,7 +8,7 @@ from django.contrib.auth.models import User,auth
 
 def register(request):
     if request.method=="POST":
-        
+        print('not registerd')
         first_name =  request.POST.get('first_name')
         last_name =request.POST.get('last_name')
         username = request.POST.get('username')
@@ -25,7 +25,7 @@ def register(request):
             else:    
 
                 user = User.objects.create_user(first_name=first_name,last_name=last_name,username=username,email=email,password=password1)
-                user.save()
+                user.save();
                 print("user created")
         else:
             print("password not matched")
