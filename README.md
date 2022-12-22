@@ -1,6 +1,6 @@
 ## Foodie
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/top.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/new1%20home.png?raw=true)
 
 # Ecomerce Website
 
