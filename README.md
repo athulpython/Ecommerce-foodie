@@ -157,14 +157,14 @@ http://127.0.0.1:8000/admin/
 
 ## Head home page
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/home.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/screencapture-new.png?raw=true)
 
 
 ## Register page
 
 #### User can fill the register form first.
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/register.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(107).png?raw=true)
 
 ## PostgreSQL database
 
@@ -176,16 +176,10 @@ http://127.0.0.1:8000/admin/
 
 #### The colleted auth user data Username and Password type on login form. unautherised people doen't open login page .  autherised user can login foodie page successfully.
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/login.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(106).png?raw=true)
 
 
 
-## Home items section
-
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/items%201.png?raw=true)
-
-
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/items2.png?raw=true)
 
 ## Item details page
 
