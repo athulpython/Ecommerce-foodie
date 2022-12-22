@@ -1,6 +1,6 @@
 ## Foodie
 
-![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/new1%20home.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/home.png?raw=true)
 
 # Ecomerce Website
 
@@ -164,7 +164,7 @@ http://127.0.0.1:8000/admin/
 
 #### User can fill the register form first.
 
-![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(107).png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/register.png?raw=true)
 
 ## PostgreSQL database
 
@@ -176,7 +176,7 @@ http://127.0.0.1:8000/admin/
 
 #### The colleted auth user data Username and Password type on login form. unautherised people doen't open login page .  autherised user can login foodie page successfully.
 
-![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(106).png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/login.png?raw=true)
 
 
 
