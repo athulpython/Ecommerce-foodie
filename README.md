@@ -102,7 +102,7 @@ This is basic E-comerce web app using
 ```
 ### Django server
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/ia8jlkozut4uxwatnqwp.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/ia8jlkozut4uxwatnqwp.png?raw=true)
 
 ## Django administration creation
 
@@ -148,10 +148,10 @@ http://127.0.0.1:8000/admin/
 
 #### Enter the superuser id and unique password
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/Screenshot%20(21).png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(21).png?raw=true)
 
 #### Login successfully entered django administration page
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/Screenshot%20(30).png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(30).png?raw=true)
 
 ## Project Screenshots
 
@@ -171,7 +171,7 @@ http://127.0.0.1:8000/admin/
 
 #### User filled register form data collected on PostgreSQL Database auth user table.
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/Screenshot%20(34).png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/Screenshot%20(34).png?raw=true)
 
 ## Login page
 
@@ -184,8 +184,8 @@ http://127.0.0.1:8000/admin/
 
 ## Item details page
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/item%20details.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/item%20details.png?raw=true)
 
 ## Item cart page
 
-![App Screenshot](https://github.com/athulpython/foodie-/blob/master/screeshots/cart.png?raw=true)
+![App Screenshot](https://github.com/athulpython/Ecommerce-foodie/blob/master/screeshots/cart.png?raw=true)
